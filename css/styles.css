@@ -42,3 +42,43 @@ nav ul li a {
     color: rgb(0, 255, 221);
     transition:.3s;
 }
+
+
+
+
+
+.general{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2em;
+    padding: 2em 0;
+}
+.general h1{
+    color: white;
+    font-size: 1.5em;
+}
+.general h2{
+    color: white;
+    font-size: 1em;
+    padding-top: 2em;
+}
+.opciones{
+    margin-top:2em;
+}
+.general p{
+    color: white;
+    font-size: 1em;
+}
+.linea{
+    color: white;
+}
+.icons{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2em;
+}
+.icons i{
+    color:white;
+    font-size: 1.5em;
+}
