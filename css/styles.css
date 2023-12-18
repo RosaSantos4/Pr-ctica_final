@@ -1,0 +1,28 @@
+header{
+    background-color: black;
+    display: flex;
+}
+.logo{
+    width: 50%;
+
+}
+
+.menu{
+    width: 50%;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin:0;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+}
+
