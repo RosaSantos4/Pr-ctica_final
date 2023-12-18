@@ -6,11 +6,13 @@ header{
     width: 50%;
 
 }
+.logo_mnm{
+    height: 10%;
+}
 
 .menu{
     width: 50%;
 }
-
 nav ul{
     list-style: none;
     display: flex;
@@ -22,7 +24,21 @@ nav ul li a {
     text-decoration: none;
     color: white;
     display: flex;
-    justify-content: space-around;
     padding: 1em;
 }
-
+.about:hover{
+    color: rgb(255, 94, 0);
+    transition:.3s;
+}
+.services:hover{
+    color: rgb(123, 255, 0);
+    transition:.3s;
+}
+.products:hover{
+    color: rgb(200, 0, 255);
+    transition:.3s;
+}
+.contact:hover{
+    color: rgb(0, 255, 221);
+    transition:.3s;
+}
