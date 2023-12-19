@@ -1,3 +1,5 @@
+
+/* header*/
 .inicio{
     background-color: black;
     display: flex;
@@ -48,7 +50,7 @@ nav ul li a{
 
 
 
-
+/* footer */
 .general{
     background-color: black;
     display: flex;
