@@ -1,5 +1,6 @@
 * {
     color: white;
+    margin: 0;
 }
 
 body {
@@ -108,20 +109,28 @@ nav ul li a{
     margin: 0;
 }
 
-/* No sé por qué tiene un fondo negro el icono de los carruseles  */
-#inicial {
-    height: 100%;
-}
-/* No sé por qué no funciona lo de altura máxima */
-
 #home h1 {
     margin-left: 1.1em;
  }
  
  #home p {
      margin-left: 4.5em;
-  }
+}
 
+#inicial {
+    height: 100%;
+}
+/* No sé por qué no funciona lo de altura máxima */
+
+
+/* MENÚ */
+a {
+    text-decoration: none;
+}
+
+#menu a:hover {
+    opacity: 60%;
+}
 /* CARRUSEL */
 .carousel-item .row {
     display: flex;
@@ -143,17 +152,22 @@ nav ul li a{
     margin-left: 4em;
 }
 
-#carrusel1 {
-    background-color: bisque;
+#carrusel4 {
+    background-color: #C7C8CD;
 }
 
 /* TARJETAS  */
 .card {
     background-color: transparent;
+    margin-bottom: 1.25em;
+    --bs-card-inner-border-radius: none;
+    --bs-card-border-color: none;
 }
 
 .card-body {
     background-color: white;
+    /* display: flex;
+    flex-wrap: wrap; */
 }
 
 .card-text {
@@ -162,12 +176,58 @@ nav ul li a{
 
 .card-title {
     color: black;
+    font-size: 1.5em;
 }
 
 .fa-arrow-right-long {
     color: black;
 }
 
+#card {
+    width: 28%;
+}
+
+.hashtag {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.hashtag p {
+    margin-right: 1em;
+    font-size: 0.8em;
+}
+
+.hashtag i {
+    margin-right: 1em;
+}
+
+.hashtag h5 {
+    margin-left: 1.5em;
+}
+
+#card .btn-primary {
+    background-color: #2AC8F3;
+    border: none;
+    border-radius: 0;
+}
+
+#card .btn-primary:hover {
+    background-color: #148EFE;
+}
+
+#maquillaje #card .btn-primary {
+    background-color: #FF0A13;
+    border: none;
+    border-radius: 0;
+}
+
 #maquillaje {
     padding-top: 2em;
+    padding-bottom: 8em;
+}
+
+#perfumes {
+    padding-top: 2em;
+    padding-bottom: 8em;
 }
