@@ -1,0 +1,74 @@
+* {
+    color: white;
+}
+
+body {
+    background-color: black;
+}
+
+.card-title {
+    color: white;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+#home {
+    margin: 0;
+}
+
+/* No sé por qué tiene un fondo negro el icono de los carruseles  */
+#inicial {
+    height: 100%;
+}
+/* No sé por qué no funciona lo de altura máxima */
+
+#home h1 {
+    margin-left: 1.1em;
+ }
+ 
+ #home p {
+     margin-left: 4.5em;
+  }
+
+/* CARRUSEL */
+.carousel-item .row {
+    display: flex;
+    align-items: center;
+}
+
+#carrusel {
+    height: 100%;
+    width: 120%;
+    margin: 0;
+    padding: 0;
+}
+
+#carrusel h2 {
+    margin-left: 1.3em;
+}
+
+#carrusel p {
+    margin-left: 4em;
+}
+
+/* TARJETAS  */
+.card {
+    background-color: transparent;
+}
+.card-body {
+    background-color: aqua;
+}
+
+.carousel-item .col-6 {
+    background-color: azure;
+}
