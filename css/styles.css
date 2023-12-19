@@ -1,171 +1,23 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+* {
+    color: white;
+}
+
+body {
+    background-color: black;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+h3 {
+    font-size: 2em;
+    margin-top: 0.5em;
+}
 
 /* header*/
 .inicio{
@@ -178,11 +30,10 @@
     align-items: center;
     
 }
-img{
+.loguito{
     max-width: 10%;
     margin: 1em;
 }
-
 
 nav ul{
     list-style: none;
@@ -214,9 +65,6 @@ nav ul li a{
     color: rgb(0, 255, 221);
     transition:.3s;
 }
-
-
-
 
 /* footer */
 .general{
@@ -255,30 +103,7 @@ nav ul li a{
     font-size: 1.5em;
 }
 
-* {
-    color: white;
-}
-
-body {
-    background-color: black;
-}
-
-.card-title {
-    color: white;
-}
-
-h1 {
-    font-size: 4em;
-}
-
-h2 {
-    font-size: 3em;
-}
-
-h3 {
-    font-size: 2em;
-}
-
+/* HOME */
 #home {
     margin: 0;
 }
@@ -305,7 +130,7 @@ h3 {
 
 #carrusel {
     height: 100%;
-    width: 120%;
+    width: 112%;
     margin: 0;
     padding: 0;
 }
@@ -318,14 +143,31 @@ h3 {
     margin-left: 4em;
 }
 
+#carrusel1 {
+    background-color: bisque;
+}
+
 /* TARJETAS  */
 .card {
     background-color: transparent;
 }
+
 .card-body {
-    background-color: aqua;
+    background-color: white;
 }
 
-.carousel-item .col-6 {
-    background-color: azure;
+.card-text {
+    color: black;
+}
+
+.card-title {
+    color: black;
+}
+
+.fa-arrow-right-long {
+    color: black;
+}
+
+#maquillaje {
+    padding-top: 2em;
 }
