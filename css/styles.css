@@ -1,6 +1,9 @@
 * {
-    background-color: black;
     color: white;
+}
+
+body {
+    background-color: black;
 }
 
 .card-title {
@@ -59,4 +62,13 @@ h3 {
 }
 
 /* TARJETAS  */
+.card {
+    background-color: transparent;
+}
+.card-body {
+    background-color: aqua;
+}
 
+.carousel-item .col-6 {
+    background-color: azure;
+}
