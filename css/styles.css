@@ -131,6 +131,23 @@ a {
 #menu a:hover {
     opacity: 60%;
 }
+
+#menu a i {
+    display: none;
+}
+
+#menu a:hover i{
+    display: flex;
+    color: white;
+    margin-right: 1em;
+}
+
+#menu_apartados {
+    display: flex;
+    align-items: baseline;
+}
+
+
 /* CARRUSEL */
 .carousel-item .row {
     display: flex;
@@ -152,9 +169,6 @@ a {
     margin-left: 4em;
 }
 
-#carrusel4 {
-    background-color: #C7C8CD;
-}
 
 /* TARJETAS  */
 .card {
@@ -166,8 +180,7 @@ a {
 
 .card-body {
     background-color: white;
-    /* display: flex;
-    flex-wrap: wrap; */
+
 }
 
 .card-text {
