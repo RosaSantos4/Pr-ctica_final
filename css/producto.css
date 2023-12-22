@@ -3,7 +3,9 @@
 }
 .producto{
     display: flex;
-    justify-content: space-between;
+}
+.menu{
+    width: 20%;
 }
 .producto a{
     text-decoration: none;
@@ -11,20 +13,46 @@
 .producto p{
     color: white;
     text-decoration: none;
+    font-size: 1.2em;
 }
 .colonia{
+    width: 80%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    height: 100vh;
+    padding-top: 2em;
 }
 img{
-    width: 50%;
+    width: 40%;
 }
 .arandano{
-    width: 50%;
+    position: fixed;
     display: flex;
     justify-content: center;
+    padding-top: 4em;
+}
+h2{
+    color: white;
+    font-size: 2em;
 }
 h3{
     color: white;
     font-size: 1em;
 }
+i{
+    color: white;
+}
+.caract{
+    z-index: 100;
+}
+.caract h3{
+    padding: 0.4em 0;
+    font-size: 1.5em;
+}
+.comprar{
+    z-index: 100;
+    display: flex;
+    align-items: flex-end;
+    
+}
+
