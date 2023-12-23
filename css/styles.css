@@ -119,10 +119,10 @@ nav ul li a{
      margin-left: 4.5em;
 }
 
-#inicial {
-    height: 100%;
-}
-/* No sé por qué no funciona lo de altura máxima */
+video { 
+    z-index: -1;
+    width: 120%;
+  }
 
 
 /* MENÚ */
