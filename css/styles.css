@@ -120,9 +120,19 @@ nav ul li a{
 }
 
 video { 
-    z-index: -1;
     width: 120%;
-  }
+}
+#inicial {
+    display: flex;
+    align-items: center;
+}
+
+.textos_iniciales {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
 
 
 /* MENÚ */
