@@ -272,6 +272,35 @@ a {
     padding-bottom: 8em;
 }
 
+/* fondos animados  */
+
+.maquillaje {
+	background: linear-gradient(-45deg, #FF0A13, #FE3888, #f891ab, #f8cce2);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+.perfumes {
+	background: linear-gradient(-45deg, #148EFE, #2AC8F3, #63D6BC, #85F59D);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
 /* MEDIA QUERIES */
 
 @media only screen and (max-width: 1220px) {
