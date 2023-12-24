@@ -160,6 +160,11 @@ a {
     align-items: baseline;
 }
 
+.productos_menu i{
+    display: none;
+}
+
+
 /* BANDA  */
 .banda {
     background: linear-gradient(to right, #5CC9E9, #4AA42F, #F9DA49, #ED6C2D, #F094F7);
@@ -197,6 +202,7 @@ a {
     margin-bottom: 1.25em;
     --bs-card-inner-border-radius: none;
     --bs-card-border-color: none;
+    width: 18rem;
 }
 
 .card-body {
@@ -218,7 +224,7 @@ a {
 }
 
 #card {
-    width: 28%;
+    margin-right: 2em;
 }
 
 .hashtag {
@@ -266,3 +272,126 @@ a {
     padding-bottom: 8em;
 }
 
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 1220px) {
+    
+    /* SECCIONES */
+
+    #card {
+        margin-right: 4.5em;
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+    /* SECCIONES */
+
+    #perfumes {
+        margin-left: 3em;
+    }
+
+    .card {
+        width: 15rem;
+    }
+
+    #card {
+        margin-right: 4em;
+    }
+
+    .hashtag {
+        flex-wrap: wrap;
+    }
+
+    .hashtag h5 {
+        margin-left:0;
+    }
+
+    .productos_menu h3 {
+        font-size: 1.75em;
+    margin-top: 0.65em;
+    }
+    
+}
+
+
+@media only screen and (max-width: 992px) {
+
+    /* SECCIONES */
+
+    #perfumes {
+        margin-left: 4em;
+    }
+
+    .card {
+       width: 100%;
+    }
+
+    #card {
+        margin-right: 0;
+    }
+
+    #menu_apartados {
+        display: none;
+    }
+
+    .productos_menu {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+    }
+
+    .productos_menu h3{
+        margin-right: 0.5em;
+    }
+
+    .productos_menu i{
+        display: flex;
+    }
+
+
+    
+  }
+
+@media only screen and (max-width: 768px) {
+
+    /* SECCIONES */
+
+    .hashtag h5 {
+        margin-left:5em;
+        font-size: 2em;
+    }
+
+    #perfumes {
+        margin-left: 3em;
+    }
+
+    #card {
+        width: 90%;
+    }
+   
+
+  }
+
+  @media only screen and (max-width: 576px) {
+
+    /* SECCIONES */
+
+    #perfumes {
+        margin-left: 1em;
+    }
+
+    p {
+        font-size: 0.8em;
+    }
+
+    .hashtag h5 {
+        margin-left:0;
+        font-size: 1.5em;
+    }
+
+    #intro_perfumes {
+        width: 90%;
+    }
+  }
