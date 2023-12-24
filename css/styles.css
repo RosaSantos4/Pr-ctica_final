@@ -312,6 +312,10 @@ a {
         font-size: 1.75em;
     margin-top: 0.65em;
     }
+
+    #maquillaje {
+        margin-left: 3em;
+    }
     
 }
 
@@ -350,7 +354,9 @@ a {
         display: flex;
     }
 
-
+    #maquillaje {
+        margin-left: 4em;
+    }
     
   }
 
@@ -370,6 +376,10 @@ a {
     #card {
         width: 90%;
     }
+
+    #maquillaje {
+        margin-left: 3em;
+    }
    
 
   }
@@ -387,11 +397,25 @@ a {
     }
 
     .hashtag h5 {
-        margin-left:0;
-        font-size: 1.5em;
+        margin-left:4em;
     }
 
     #intro_perfumes {
         width: 90%;
     }
+
+    #maquillaje {
+        margin-left: 1em;
+    }
+  }
+
+  @media only screen and (max-width: 450px) {
+
+    /* SECCIONES */
+
+    .hashtag h5 {
+        margin-left:0;
+        font-size: 1.5em;
+    }
+
   }
