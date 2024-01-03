@@ -1,6 +1,4 @@
-*{
-    background-color: black;
-}
+
 .producto{
     display: flex;
 }
@@ -22,14 +20,30 @@
     height: 100vh;
     padding-top: 2em;
 }
-img{
-    width: 40%;
-}
-.arandano{
+
+.fotos{
+    display: flex;
+    flex-direction: column;
     position: fixed;
+    background-color: black;
+}
+.arandano_borde{
     display: flex;
     justify-content: center;
-    padding-top: 4em;
+    transform: rotate(45deg);
+
+}
+.arandano{
+    display: flex;
+    justify-content: center;
+ 
+}
+
+.arandano img{
+    width: 40%;
+}
+.arandano_borde img{
+    width: 10%;
 }
 h2{
     color: white;
@@ -54,5 +68,8 @@ i{
     display: flex;
     align-items: flex-end;
     
+}
+.comprar img{
+    width: 20%;
 }
 
