@@ -27,6 +27,24 @@
 .ingredientes{
     padding-top: 4em;
 }
+.ingredientes i{
+    color:blueviolet;
+}
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+.contenedor img{
+    width: 100%;
+}
+
+.centrado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 .fotos{
     display: flex;
     flex-direction: column;
@@ -47,6 +65,10 @@
 
 .arandano img{
     width: 40%;
+}
+.arandano img:hover{
+    width: 60%;
+    transition: 0.2s;
 }
 .arandano_borde img{
     width: 10%;
@@ -75,7 +97,19 @@ i{
     align-items: flex-end;
     
 }
-.comprar img{
-    width: 20%;
+.boton{
+    width: 40%;
 }
-
+.boton_hover{
+    width: 40%;
+}
+.boton_hover{
+    display: none;
+}
+.boton:hover{
+    display: none;
+}
+.boton_hover:hover{
+    display:block;
+    
+}
