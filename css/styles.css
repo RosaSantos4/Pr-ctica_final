@@ -27,6 +27,7 @@ h3 {
     background-color: black;
     display: flex;
     justify-content: space-around;
+    z-index: 999;
 }
 .logo{
     display: flex;
@@ -273,6 +274,7 @@ a {
 @media only screen and (max-width: 800px) {
     header {
       padding: 0 1em;
+      z-index: 999;
     }
     .bars{
         display: block;
@@ -288,13 +290,15 @@ a {
         top: 1em;
         left: 0;
         right: 0;
-        width: 100vw;
+        width: 95vw;
         background-color: black;
         transition: 0.5s;
         overflow: hidden;
+        z-index: 999;
     }
     .nav-bar.active{
-        height: 450px;
+        height: 300px;
+        z-index: 999;
     }
     .nav-bar ul{
         display: block;
@@ -303,12 +307,15 @@ a {
         text-align: center;
         transition: 0.5s;
         opacity: 0;
+        z-index: 999;
     }
     .nav-bar.active ul{
         opacity: 1;
+        z-index: 999;
     }
     .nav-bar ul li a{
         margin-bottom: 0.5em;
+        z-index: 999;
     }
   }
 
