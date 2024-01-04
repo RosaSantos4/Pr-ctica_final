@@ -2,6 +2,7 @@
     color: white;
     margin: 0;
     font-family: 'DM Sans', sans-serif;
+    overflow-x: hidden;
 }
 
 body {
@@ -110,19 +111,34 @@ nav ul li a{
 #home {
     margin: 0;
     padding: 0;
+    max-width: 1920px;
 }
 
 #home h1 {
     margin-left: 1.1em;
- }
+}
  
- #home p {
+#home p {
      margin-left: 4.5em;
 }
 
 video { 
-    width: 120%;
+    /* Make video to at least 100% wide and tall */
+    min-width: 100%; 
+    min-height: 100%; 
+    object-fit: fill;
+    
+    /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+    width: auto;
+    height: auto;
+    
+    /* Center the video */
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); */
 }
+
 #inicial {
     display: flex;
     align-items: center;
@@ -164,7 +180,7 @@ a {
 .banda {
     background: linear-gradient(to right, #5CC9E9, #4AA42F, #F9DA49, #ED6C2D, #F094F7);
     padding-top: 0.5em;
-    width: 110%;
+    width: 100%;
 }
 
 
@@ -177,7 +193,8 @@ a {
 
 #carrusel {
     height: 100%;
-    width: 111%;
+    /* width: 111%; */
+    width: 100.5%;
     margin: 0;
     padding: 0;
 }
