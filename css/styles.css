@@ -111,7 +111,8 @@ nav ul li a{
 #home {
     margin: 0;
     padding: 0;
-    max-width: 1920px;
+    /* max-width: 1920px; */
+    /* max-height: 100vh; */
 }
 
 #home h1 {
@@ -119,8 +120,14 @@ nav ul li a{
 }
  
 #home p {
-     margin-left: 4.5em;
+    margin-left: 4.5em;
 }
+
+/* .row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+} */
 
 video { 
     /* Make video to at least 100% wide and tall */
@@ -130,13 +137,8 @@ video {
     
     /* Setting width & height to auto prevents the browser from stretching or squishing the video */
     width: auto;
-    height: auto;
-    
-    /* Center the video */
-    /* position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%); */
+    /* height: auto; */
+
 }
 
 #inicial {
