@@ -48,8 +48,7 @@
 .fotos{
     display: flex;
     flex-direction: column;
-    position: fixed;
-    background-color: black;
+    position: fixed; 
 }
 .arandano_borde{
     display: flex;
@@ -94,11 +93,52 @@ i{
 .comprar{
     z-index: 100;
     display: flex;
-    align-items: flex-end;
-    
+    justify-content: center;
+    flex-direction: column;    
 }
+
 .comprar img{
     width: 40%;
+    
+}
+@media only screen and (max-width: 1000px){
+    h2{
+        font-size: 2em;
+    }
+    .contenedor img{
+        width: 70%;
+    }
+    .caract h3{
+        font-size: 1.2em;
+    }
+    .producto p{
+        font-size: .9em;
+    }
+    .comprar{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        padding-right: 2em;
+   
+    }
+}
+@media only screen and (max-width: 600px){
+    .producto{
+        display: inline-block;
+    }
+    .colonia{
+        display: inline-block;
+        justify-content: center;
+    }
+    .caract{
+        display: inline-block;
+        justify-content: center;
+    }
+    .fotos{
+        display: flex;
+        flex-direction: column-reverse;
+        position: absolute; 
+    }
 }
 
 
