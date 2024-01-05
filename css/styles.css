@@ -111,35 +111,41 @@ nav ul li a{
 #home {
     margin: 0;
     padding: 0;
-    /* max-width: 1920px; */
+    max-width: 1920px;
     /* max-height: 100vh; */
 }
 
 #home h1 {
-    margin-left: 1.1em;
+    margin-left: 2.2em;
 }
  
 #home p {
-    margin-left: 4.5em;
+    margin-left: 8.9em;
 }
 
-/* .row {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-} */
+.row * {
+    padding-left: 0;
+    padding-right: 0;
+}
 
-video { 
+.video-container {
+    max-height: 94vh;
+    overflow-y: hidden ;
+}
+
+.video-container video { 
     /* Make video to at least 100% wide and tall */
-    min-width: 100%; 
-    min-height: 100%; 
-    object-fit: fill;
-    
+    /* min-width: 100%;  */
+
+    /* object-fit: fill; */
+    max-width: 1920px;
     /* Setting width & height to auto prevents the browser from stretching or squishing the video */
     width: auto;
+    height: auto;
     /* height: auto; */
 
 }
+
 
 #inicial {
     display: flex;
@@ -194,12 +200,21 @@ a {
 }
 
 #carrusel {
-    height: 100%;
-    /* width: 111%; */
-    width: 100.5%;
+    /* height: 100%;
+    width: 100.5%; */
     margin: 0;
     padding: 0;
+    max-height: 93vh;
+    overflow-y: hidden;
 }
+
+#carouselExampleAutoplaying {
+    max-width: 1920px;
+    /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+    width: auto;
+    height: auto;
+}
+
 
 #carrusel h2 {
     margin-left: 1.3em;
@@ -208,6 +223,8 @@ a {
 #carrusel p {
     margin-left: 4em;
 }
+
+
 
 
 /* TARJETAS  */
@@ -285,3 +302,419 @@ a {
     padding-bottom: 8em;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+  Principalmente para ocultar el menú hamburguesa
+*/
+
+@media (min-width: 1281px) {
+
+
+}
+
+
+@media (min-width: 1024px) and (max-width: 1854px) {
+
+
+}
+
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+/* @media (min-width: 1025px) and (max-width: 1280px) {
+
+
+  
+} */
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    /* h1 {
+        font-size: 2.5em;
+    }
+    
+    h2 {
+        font-size: 1em;
+    }
+    
+    h3 {
+        font-size: 1.5em;
+        margin-top: 0.5em;
+    }
+
+    #home h1 {
+        margin-left: 3em;
+    }
+     
+    #home p {
+        margin-left: 8.9em;
+    } */
+
+}
+
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 375px) and (max-width: 780px) {
+   
+    #home h1 {
+        text-align: center;
+        margin: 0;
+    }
+     
+    #home p {
+        margin: 0;
+        text-align: center;
+    } 
+
+    .textos_iniciales {
+        vertical-align: middle;
+        line-height: 1.5em ;  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        left: 1%;
+    }
+
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    h1 {
+        font-size: 2.5em;
+    }
+    
+    h2 {
+        font-size: 1em;
+    }
+    
+    h3 {
+        font-size: 1.5em;
+        margin-top: 0.5em;
+    }
+
+    p {
+        font-size: .9em;
+    }
+
+    #home h1 {
+        text-align: center;
+        margin: 0;
+    }
+     
+    #home p {
+        margin: 0;
+        text-align: center;
+    } 
+
+    .textos_iniciales {
+        vertical-align: middle;
+        line-height: 1.2em ;  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1em;
+        max-width: 480px;
+    }
+
+    .video-container {
+        max-height: 84vh;
+        overflow-y: hidden ;
+    }
+
+    .video-container video { 
+        max-width: 1920px;
+        width: auto;
+        height: auto;
+    }
+
+    #carrusel {
+        margin: 0;
+        padding: 0;
+        max-height: 85vh;
+        overflow-y: hidden;
+    }
+    
+    #carouselExampleAutoplaying {
+        max-width: 1920px;
+        width: auto;
+        height: auto;
+    }
+   
+}
+
+@media (min-width: 0px) and (max-width: 320px) {
+
+    h1 {
+        font-size: 2.5em;
+    }
+    
+    h2 {
+        font-size: 1em;
+    }
+    
+    h3 {
+        font-size: 1.5em;
+        margin-top: 0.5em;
+    }
+
+    p {
+        font-size: .9em;
+    }
+
+    #home h1 {
+        text-align: center;
+        margin: 0;
+    }
+     
+    #home p {
+        margin: 0;
+        text-align: center;
+    } 
+
+    .textos_iniciales {
+        vertical-align: middle;
+        line-height: 1.2em ;  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1em;
+        max-width: 480px;
+    }
+
+    .video-container {
+        max-height: 84vh;
+        overflow-y: hidden ;
+    }
+
+    .video-container video { 
+        max-width: 1920px;
+        width: auto;
+        height: auto;
+    }
+
+    #carrusel {
+        margin: 0;
+        padding: 0;
+        max-height: 85vh;
+        overflow-y: hidden;
+    }
+    
+    #carouselExampleAutoplaying {
+        max-width: 1920px;
+        width: auto;
+        height: auto;
+    }
+   
+}
