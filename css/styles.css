@@ -22,7 +22,6 @@ h3 {
     margin-top: 0.5em;
 }
 
-
 /* header*/
 .inicio{
     background-color: black;
@@ -318,14 +317,12 @@ a {
 	background: linear-gradient(-45deg, #FF0A13, #FE3888, #f891ab, #f8cce2);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
-	height: 100vh;
 }
 
 .perfumes {
 	background: linear-gradient(-45deg, #148EFE, #2AC8F3, #63D6BC, #85F59D);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
-	height: 100vh;
 }
 
 @keyframes gradient {
@@ -339,212 +336,6 @@ a {
 		background-position: 0% 50%;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* MEDIA QUERIES */
 
@@ -584,7 +375,7 @@ a {
 
     .productos_menu h3 {
         font-size: 1.75em;
-    margin-top: 0.65em;
+        margin-top: 0.65em;
     }
 
     #maquillaje {
@@ -631,20 +422,65 @@ a {
     #maquillaje {
         margin-left: 4em;
     }
+
+    .flecha_abajo{
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu_product{
+        height: 0px;
+        position: absolute;
+        top: 1em;
+        left: 0;
+        right: 0;
+        background-color: black;
+        transition: 0.5s;
+        overflow: hidden;
+        z-index: 999;
+    }
+    .menu_product.active{
+        height: 300px;
+        z-index: 999;
+        margin-top: 1em;
+    }
+    .menu_product ul{
+        display: block;
+        width: fit-content;
+        margin: 0;
+        padding-left: 4em;
+        transition: 0.5s;
+        opacity: 0;
+        z-index: 999;
+    }
+    .menu_product.active ul{
+        opacity: 1;
+        z-index: 999;
+    }
+
+    .menu_procuct ul li a{
+        margin-bottom: 0.5em;
+        z-index: 999;
+    }
     
   }
 
 @media only screen and (max-width: 768px) {
   
     /* MENÚ RESPONSIVE */
+
+    .inicio {
+        display: flex;
+        align-items: center;
+    }
   
-  header {
-      padding: 0 1em;
-      z-index: 999;
+    header {
+        z-index: 999;
     }
     .bars{
         display: block;
-        cursor:pointer;
+        cursor: pointer;
+        margin-right: 1em;
     }
     .bars  i{
         color: white;
@@ -656,7 +492,6 @@ a {
         top: 1em;
         left: 0;
         right: 0;
-        width: 95vw;
         background-color: black;
         transition: 0.5s;
         overflow: hidden;
@@ -665,12 +500,13 @@ a {
     .nav-bar.active{
         height: 300px;
         z-index: 999;
+        margin-top: 1em;
     }
     .nav-bar ul{
         display: block;
         width: fit-content;
-        margin: 1em auto 0 auto;
-        text-align: center;
+        margin: 0;
+        padding-left: 4em;
         transition: 0.5s;
         opacity: 0;
         z-index: 999;
@@ -679,10 +515,13 @@ a {
         opacity: 1;
         z-index: 999;
     }
+
     .nav-bar ul li a{
         margin-bottom: 0.5em;
         z-index: 999;
     }
+
+    
 
     /* SECCIONES */
 
