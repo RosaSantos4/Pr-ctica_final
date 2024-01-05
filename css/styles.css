@@ -28,6 +28,7 @@ h3 {
     background-color: black;
     display: flex;
     justify-content: space-around;
+    z-index: 999;
 }
 .logo{
     display: flex;
@@ -37,6 +38,9 @@ h3 {
 .loguito{
     max-width: 10%;
     margin: 1em;
+}
+.bars{
+    display: none;
 }
 
 nav ul{
@@ -184,6 +188,11 @@ a {
     align-items: baseline;
 }
 
+.productos_menu i{
+    display: none;
+}
+
+
 /* BANDA  */
 .banda {
     background: linear-gradient(to right, #5CC9E9, #4AA42F, #F9DA49, #ED6C2D, #F094F7);
@@ -233,6 +242,7 @@ a {
     margin-bottom: 1.25em;
     --bs-card-inner-border-radius: none;
     --bs-card-border-color: none;
+    width: 18rem;
 }
 
 .card-body {
@@ -254,7 +264,7 @@ a {
 }
 
 #card {
-    width: 28%;
+    margin-right: 2em;
 }
 
 .hashtag {
@@ -302,272 +312,400 @@ a {
     padding-bottom: 8em;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* media queries */
-
-/* 
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
-  Principalmente para ocultar el menú hamburguesa
-*/
-
-@media (min-width: 1281px) {
-
-
+/* fondos animados  */
+
+.maquillaje {
+	background: linear-gradient(-45deg, #FF0A13, #FE3888, #f891ab, #f8cce2);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+.perfumes {
+	background: linear-gradient(-45deg, #148EFE, #2AC8F3, #63D6BC, #85F59D);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 
-@media (min-width: 1024px) and (max-width: 1854px) {
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 1220px) {
+    
+    /* SECCIONES */
+
+    #card {
+        margin-right: 4.5em;
+    }
 
 }
 
+@media only screen and (max-width: 1200px) {
 
-/* 
-  ##Device = Laptops, Desktops
-  ##Screen = B/w 1025px to 1280px
-*/
+    /* SECCIONES */
 
-/* @media (min-width: 1025px) and (max-width: 1280px) {
-
-
-  
-} */
-
-/* 
-  ##Device = Tablets, Ipads (portrait)
-  ##Screen = B/w 768px to 1024px
-*/
-
-@media (min-width: 768px) and (max-width: 1024px) {
-
-    /* h1 {
-        font-size: 2.5em;
-    }
-    
-    h2 {
-        font-size: 1em;
-    }
-    
-    h3 {
-        font-size: 1.5em;
-        margin-top: 0.5em;
-    }
-
-    #home h1 {
+    #perfumes {
         margin-left: 3em;
     }
-     
-    #home p {
-        margin-left: 8.9em;
-    } */
 
+    .card {
+        width: 15rem;
+    }
+
+    #card {
+        margin-right: 4em;
+    }
+
+    .hashtag {
+        flex-wrap: wrap;
+    }
+
+    .hashtag h5 {
+        margin-left:0;
+    }
+
+    .productos_menu h3 {
+        font-size: 1.75em;
+    margin-top: 0.65em;
+    }
+
+    #maquillaje {
+        margin-left: 3em;
+    }
+    
 }
 
 
-/* 
-  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-  ##Screen = B/w 481px to 767px
-*/
+@media only screen and (max-width: 992px) {
 
-@media (min-width: 375px) and (max-width: 780px) {
-   
-    #home h1 {
+    /* SECCIONES */
+
+    #perfumes {
+        margin-left: 4em;
+    }
+
+    .card {
+       width: 100%;
+    }
+
+    #card {
+        margin-right: 0;
+    }
+
+    #menu_apartados {
+        display: none;
+    }
+
+    .productos_menu {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+    }
+
+    .productos_menu h3{
+        margin-right: 0.5em;
+    }
+
+    .productos_menu i{
+        display: flex;
+    }
+
+    #maquillaje {
+        margin-left: 4em;
+    }
+    
+  }
+
+@media only screen and (max-width: 768px) {
+  
+    /* MENÚ RESPONSIVE */
+  
+  header {
+      padding: 0 1em;
+      z-index: 999;
+    }
+    .bars{
+        display: block;
+        cursor:pointer;
+    }
+    .bars  i{
+        color: white;
+        font-size: 1em;
+    }
+    .nav-bar{
+        height: 0px;
+        position: absolute;
+        top: 1em;
+        left: 0;
+        right: 0;
+        width: 95vw;
+        background-color: black;
+        transition: 0.5s;
+        overflow: hidden;
+        z-index: 999;
+    }
+    .nav-bar.active{
+        height: 300px;
+        z-index: 999;
+    }
+    .nav-bar ul{
+        display: block;
+        width: fit-content;
+        margin: 1em auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+        z-index: 999;
+    }
+    .nav-bar.active ul{
+        opacity: 1;
+        z-index: 999;
+    }
+    .nav-bar ul li a{
+        margin-bottom: 0.5em;
+        z-index: 999;
+    }
+
+    /* SECCIONES */
+
+    .hashtag h5 {
+        margin-left:5em;
+        font-size: 2em;
+    }
+
+    #perfumes {
+        margin-left: 3em;
+    }
+
+    #card {
+        width: 90%;
+    }
+
+    #maquillaje {
+        margin-left: 3em;
+    }
+  
+  /* Inicio */
+  
+      #home h1 {
         text-align: center;
         margin: 0;
     }
@@ -585,9 +723,35 @@ a {
         align-items: center;
         left: 1%;
     }
+   
 
-}
+  }
 
+  @media only screen and (max-width: 576px) {
+
+    /* SECCIONES */
+
+    #perfumes {
+        margin-left: 1em;
+    }
+
+    p {
+        font-size: 0.8em;
+    }
+
+    .hashtag h5 {
+        margin-left:4em;
+    }
+
+    #intro_perfumes {
+        width: 90%;
+    }
+
+    #maquillaje {
+        margin-left: 1em;
+    }
+    
+  }
 
 @media (min-width: 320px) and (max-width: 480px) {
 
@@ -654,6 +818,17 @@ a {
    
 }
 
+  @media only screen and (max-width: 450px) {
+
+    /* SECCIONES */
+
+    .hashtag h5 {
+        margin-left:0;
+        font-size: 1.5em;
+    }
+
+  }
+
 @media (min-width: 0px) and (max-width: 320px) {
 
     h1 {
@@ -718,3 +893,187 @@ a {
     }
    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
