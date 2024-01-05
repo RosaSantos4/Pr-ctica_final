@@ -2,7 +2,7 @@
     color: white;
     margin: 0;
     font-family: 'DM Sans', sans-serif;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 body {
@@ -127,10 +127,10 @@ nav ul li a{
     margin-left: 8.9em;
 }
 
-.row * {
+/* .row * {
     padding-left: 0;
     padding-right: 0;
-}
+} */
 
 .video-container {
     max-height: 94vh;
