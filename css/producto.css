@@ -1,10 +1,12 @@
-*{
-    background-color: black;
+* {
+    color: white;
+    margin: 0;
+    font-family: 'DM Sans', sans-serif;
 }
 .producto{
     display: flex;
 }
-.menu{
+.opciones{
     width: 20%;
 }
 .producto a{
@@ -22,18 +24,57 @@
     height: 100vh;
     padding-top: 2em;
 }
-img{
-    width: 40%;
+.ingredientes{
+    padding-top: 4em;
 }
-.arandano{
-    position: fixed;
+.ingredientes i{
+    color:blueviolet;
+}
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+.contenedor img{
+    width: 100%;
+}
+
+.centrado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.fotos{
+    display: flex;
+    flex-direction: column;
+    position: fixed; 
+}
+.arandano_borde{
     display: flex;
     justify-content: center;
-    padding-top: 4em;
+    transform: rotate(45deg);
+
+}
+.arandano{
+    display: flex;
+    justify-content: center;
+ 
+}
+
+.arandano img{
+    width: 40%;
+}
+.arandano img:hover{
+    width: 60%;
+    transition: 0.2s;
+}
+.arandano_borde img{
+    width: 10%;
 }
 h2{
     color: white;
-    font-size: 2em;
+    font-size: 3em;
 }
 h3{
     color: white;
@@ -52,7 +93,52 @@ i{
 .comprar{
     z-index: 100;
     display: flex;
-    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;    
+}
+
+.comprar img{
+    width: 40%;
     
 }
+@media only screen and (max-width: 1000px){
+    h2{
+        font-size: 2em;
+    }
+    .contenedor img{
+        width: 70%;
+    }
+    .caract h3{
+        font-size: 1.2em;
+    }
+    .producto p{
+        font-size: .9em;
+    }
+    .comprar{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        padding-right: 2em;
+   
+    }
+}
+@media only screen and (max-width: 600px){
+    .producto{
+        display: inline-block;
+    }
+    .colonia{
+        display: inline-block;
+        justify-content: center;
+    }
+    .caract{
+        display: inline-block;
+        justify-content: center;
+    }
+    .fotos{
+        display: flex;
+        flex-direction: column-reverse;
+        position: absolute; 
+    }
+}
+
 
