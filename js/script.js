@@ -13,8 +13,8 @@ function unhover(element){
     element.setAttribute('src',"media/boton.svg")
 }
 
-flecha_abajo = document.querySelector(".flecha_abajo");
-flecha_abajo.onclick = function () {
-    navBar = document.querySelector (".menu_product");
-    navBar.classList.toggle("active");
+productos_menu = document.querySelector(".productos_menu");
+productos_menu.onclick = function () {
+    navBar = document.querySelector (".nav-bar-producto");
+    navBar.classList.toggle("active_producto");
 }

@@ -195,6 +195,17 @@ a {
     display: none;
 }
 
+.active_producto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+}
+
+.active_producto li a{
+    padding: 0;
+}
+
 
 /* BANDA  */
 .banda {
@@ -406,7 +417,7 @@ a {
     }
 
     .menu_productos {
-        width: 200%;
+        width: 300%;
     }
 
     .productos_menu {
@@ -415,12 +426,35 @@ a {
         align-items: baseline;
     }
 
+    .productos_menu i{
+        display: block;
+        cursor: pointer;
+    }
+
     .productos_menu h3{
         margin-right: 0.5em;
     }
 
-    .productos_menu i{
-        display: flex;
+    .nav-bar-producto {
+        transition: 0.5s;
+        overflow: hidden;
+        height: 0px;
+    }
+
+    .nav-bar-producto.active_producto {
+        height: fit-content;
+    }
+
+    .nav-bar-producto ul{
+        display: block;
+        width: fit-content;
+        margin: 0;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .nav-bar-producto.active_producto ul{
+        opacity: 1;;
     }
 
     #maquillaje {
@@ -472,6 +506,7 @@ a {
         display: block;
         width: fit-content;
         margin: 0;
+        padding-top: 2em;
         padding-left: 4em;
         transition: 0.5s;
         opacity: 0;
@@ -564,9 +599,6 @@ a {
         font-size: 2.5em;
     }
     
-    h2 {
-        font-size: 1em;
-    }
     
     h3 {
         font-size: 1.5em;
@@ -641,7 +673,7 @@ a {
     }
     
     h2 {
-        font-size: 1em;
+        font-size: 2em;
     }
     
     h3 {
