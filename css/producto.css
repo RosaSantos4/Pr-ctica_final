@@ -49,9 +49,6 @@
     display: flex;
     flex-direction: column;
     position: fixed; 
-   
-    
-    
 }
 .arandano_borde{
     display: flex;
@@ -95,20 +92,23 @@ i{
 .prueba {
     display: flex;
     flex-direction: row-reverse;
+    
 }
 .comprar{
     
     display: flex;
     justify-content: center;
-    flex-direction: column;    
+    flex-direction: column; 
+  
 }
 
 .comprar img{
     width: 40%;
     z-index: 100;
     
+    
 }
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 1200px){
     h2{
         font-size: 2em;
     }
@@ -124,9 +124,28 @@ i{
     .comprar{
         display: flex;
         justify-content: center;
-        align-items: flex-end;
-        padding-right: 2em;
+        align-items: center;
+        padding-top: 10em;
+    }
    
+    .arandano img{
+        width: 50%;
+    }
+    .arandano_borde img{
+        width: 20%;
+    }
+    .arandano img:hover{
+        width: 55%;
+        transition: 0.2s;
+    }
+    .prueba{
+        display: flex;
+        flex-direction: row;
+    }
+    .fotos{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
     }
 }
 @media only screen and (max-width: 600px){
@@ -134,13 +153,17 @@ i{
         display: flex;
     }
     .colonia{
-        display: inline-block;
-        justify-content: center;
+        display: inline-grid;
     }
     .caract{
         display: inline-block;
         justify-content: center;
     }
+    .caract h3{
+        padding: 0.2em 0;
+        font-size: 1.2em;
+    }
+   
     .fotos{
         display: flex;
         flex-direction: column-reverse;
@@ -148,11 +171,16 @@ i{
     }
     .prueba{
         
-        display: flex;
+        display: inline-block;
         align-items: center;
-        padding-top: 8em;
+        
     }
-    
+    .comprar {
+        position: absolute;
+        
+        display: flex;
+        padding-left: 7em;
+    }
     
 }
 
