@@ -155,10 +155,7 @@ i{
     .colonia{
         display: inline-grid;
     }
-    .caract{
-        display: inline-block;
-        justify-content: center;
-    }
+   
     .caract h3{
         padding: 0.2em 0;
         font-size: 1.2em;
@@ -170,16 +167,14 @@ i{
         position: absolute; 
     }
     .prueba{
-        
-        display: inline-block;
-        align-items: center;
+    display: flex;
+    justify-content: center;
         
     }
     .comprar {
         position: absolute;
+        padding:40em 0 10em 0;
         
-        display: flex;
-        padding-left: 7em;
     }
     
 }
