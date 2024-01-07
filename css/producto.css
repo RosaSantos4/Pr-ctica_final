@@ -121,11 +121,15 @@ i{
     .producto p{
         font-size: .9em;
     }
+    .colonia {
+        display: flex;
+        justify-content: space-evenly;
+    }
     .comprar{
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-top: 10em;
+        padding-top: 20em;
     }
    
     .arandano img{
@@ -148,6 +152,7 @@ i{
         position: absolute;
     }
 }
+
 @media only screen and (max-width: 600px){
     .producto{
         display: flex;
@@ -173,7 +178,7 @@ i{
     }
     .comprar {
         position: absolute;
-        padding:45em 0 10em 0;
+        padding:40em 0 10em 0;
         
     }
     
