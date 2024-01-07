@@ -173,10 +173,18 @@ i{
     }
     .comprar {
         position: absolute;
-        padding:40em 0 10em 0;
+        padding:45em 0 10em 0;
         
     }
     
 }
+@media only screen and (max-width: 450px) {
+    .comprar {
+        position: absolute;
+        padding:30em 0 10em 0;
+        
+    }
+}
+
 
 
