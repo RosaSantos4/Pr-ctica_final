@@ -1,25 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 643.51 311.98">
+<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 836.89 308.68">
   <defs>
     <style>
       .cls-1 {
         fill: #fff;
-        font-family: Raleway-Thin, Raleway;
+        font-family: Sailec, Sailec;
         font-size: 79.85px;
-        font-variation-settings: 'wght' 100;
-        font-weight: 200;
       }
 
       .cls-2 {
         fill: #7d00c6;
         stroke-width: 0px;
       }
-      
     </style>
   </defs>
-  <g>
-    <ellipse class="cls-2" cx="321.75" cy="155.99" rx="340.52" ry="97.41" transform="translate(-34.97 131.4) rotate(-21.92)"/>
-    <ellipse class="cls-2" cx="321.75" cy="155.99" rx="97.41" ry="340.52" transform="translate(65.16 405.03) rotate(-70.01)"/>
-  </g>
-  <text class="cls-1" transform="translate(127.5 190.17)"><tspan x="0" y="0">COMPRAR</tspan></text>
+  <ellipse class="cls-2" cx="418.45" cy="154.34" rx="428.79" ry="122.66" transform="translate(-24.17 99.46) rotate(-13.18)"/>
+  <ellipse class="cls-2" cx="418.45" cy="154.34" rx="122.66" ry="428.79" transform="translate(172.78 526.58) rotate(-76.82)"/>
+  <text class="cls-1" transform="translate(203.07 185.97)"><tspan x="0" y="0">COMPRAR</tspan></text>
 </svg>
