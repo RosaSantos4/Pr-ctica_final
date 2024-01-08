@@ -114,7 +114,8 @@ nav ul li a{
 #home {
     margin: 0;
     padding: 0;
-    max-width: 1920px;
+    max-width: 100vw;
+    /* max-width: 1920px; */
     /* max-height: 100vh; */
 }
 
@@ -247,6 +248,18 @@ a {
     margin-left: 4em;
 }
 
+.comprar{
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;    
+    margin-left: 3.5em;
+}
+
+.comprar img{
+    width: 25%;
+}
+
 
 
 
@@ -351,6 +364,7 @@ a {
 		background-position: 0% 50%;
 	}
 }
+
 
 /* MEDIA QUERIES */
 
@@ -461,6 +475,49 @@ a {
         margin-left: 4em;
     }
 
+
+    /* CAROUSEL */
+
+    .carousel-item .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0;
+    }
+
+    #carouselExampleAutoplaying {
+        max-width: 100vw;
+        width: auto;
+        height: auto;
+    }
+    
+    #carrusel h2 {
+        margin: .5em;
+        padding-top: 1em;
+    }
+    
+    #carrusel p {
+        margin-left: 4em;
+        margin: 1.5em;
+        margin-top: .5em;
+    }
+
+    .comprar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-right: 5em;
+        padding: 1em;
+        padding-top: 0;
+        margin: 0;
+    }
+
+    .comprar img{
+        width: 60%;
+    }
     
     
   }
@@ -563,6 +620,51 @@ a {
         align-items: center;
         left: 1%;
     }
+
+
+     /* CAROUSEL */
+
+     .carousel-item .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0;
+    }
+
+    #carouselExampleAutoplaying {
+        max-width: 100vw;
+        width: auto;
+        height: auto;
+    }
+    
+    #carrusel h2 {
+        margin: .5em;
+        padding-top: 1em;
+    }
+    
+    #carrusel p {
+        margin-left: 4em;
+        margin: 1.5em;
+        margin-top: .5em;
+    }
+
+    .comprar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-right: 5em;
+        padding: 1em;
+        padding-top: 0;
+        margin: 0;
+    }
+
+    .comprar img{
+        width: 60%;
+    }
+   
    /* footer */
    .general{
     padding: 1em 0;
@@ -570,6 +672,7 @@ a {
    .general h1{
     font-size: 1.2em;
    }
+
 
   }
   @media only screen and (max-width: 600px) {
@@ -625,6 +728,49 @@ a {
     #maquillaje {
         margin-left: 1em;
     }
+
+     /* CAROUSEL */
+
+     .carousel-item .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0;
+    }
+
+    #carouselExampleAutoplaying {
+        max-width: 100vw;
+        width: auto;
+        height: auto;
+    }
+    
+    #carrusel h2 {
+        margin: .5em;
+        padding-top: 1em;
+    }
+    
+    #carrusel p {
+        margin-left: 4em;
+        margin: 1.5em;
+        margin-top: .5em;
+    }
+
+    .comprar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-right: 5em;
+        padding: 1em;
+        padding-top: 0;
+        margin: 0;
+    }
+
+    .comprar img{
+        width: 60%;
+    }
     
   }
 
@@ -670,7 +816,6 @@ a {
     }
 
     .video-container video { 
-        max-width: 1920px;
         width: auto;
         height: auto;
     }
@@ -681,11 +826,54 @@ a {
         max-height: 85vh;
         overflow-y: hidden;
     }
-    
+
+
+     /* CAROUSEL */
+
+    .carousel-item .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0;
+    }
+
     #carouselExampleAutoplaying {
-        max-width: 1920px;
+        max-width: 100vw;
         width: auto;
         height: auto;
+    }
+    
+    #carrusel h2 {
+        font-size: 2em;
+        margin: .5em;
+        padding-top: 1em;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    #carrusel p {
+        font-size: 1.2em;
+        margin: 1.5em;
+        margin-top: .5em;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .comprar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-right: 5em;
+        padding: 1em;
+        padding-top: 0;
+        margin: 0;
+    }
+
+    .comprar img{
+        width: 80%;
     }
    
 }
@@ -750,11 +938,9 @@ a {
     }
 
     .video-container video { 
-        max-width: 1920px;
         width: auto;
         height: auto;
     }
-
     #carrusel {
         margin: 0;
         padding: 0;
@@ -763,9 +949,40 @@ a {
     }
     
     #carouselExampleAutoplaying {
-        max-width: 1920px;
+        max-width: 100vw;
         width: auto;
         height: auto;
+    }
+    
+    #carrusel h2 {
+        font-size: 2em;
+        margin: .5em;
+        padding-top: 1em;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    #carrusel p {
+        font-size: 1.2em;
+        margin: 1.5em;
+        margin-top: .5em;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .comprar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-right: 5em;
+        padding: 1em;
+        padding-top: 0;
+        margin: 0;
+    }
+
+    .comprar img{
+        width: 100%;
     }
    
 }
