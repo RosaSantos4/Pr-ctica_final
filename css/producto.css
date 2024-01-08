@@ -63,10 +63,11 @@
 }
 
 .arandano img{
-    width: 40%;
+    width: 30%;
+    padding-top: 2em;
 }
 .arandano img:hover{
-    width: 60%;
+    width: 35%;
     transition: 0.2s;
 }
 .arandano_borde img{
@@ -83,25 +84,32 @@ h3{
 i{
     color: white;
 }
-.caract{
-    z-index: 100;
-}
+
 .caract h3{
     padding: 0.4em 0;
     font-size: 1.5em;
 }
-.comprar{
-    z-index: 100;
+.prueba {
     display: flex;
-    justify-content: center;
-    flex-direction: column;    
-}
-
-.comprar img{
-    width: 40%;
+    flex-direction: row-reverse;
     
 }
-@media only screen and (max-width: 1000px){
+.comprar{
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+  
+}
+
+
+.comprar img{
+    width: 50%;
+    z-index: 100;
+    
+    
+}
+@media only screen and (max-width: 1200px){
     h2{
         font-size: 2em;
     }
@@ -114,31 +122,75 @@ i{
     .producto p{
         font-size: .9em;
     }
+    .colonia {
+        display: flex;
+        justify-content: space-evenly;
+    }
     .comprar{
         display: flex;
         justify-content: center;
-        align-items: flex-end;
-        padding-right: 2em;
+        align-items: center;
+        padding-top: 20em;
+    }
    
+    .arandano img{
+        width: 50%;
+    }
+    .arandano_borde img{
+        width: 20%;
+    }
+    .arandano img:hover{
+        width: 55%;
+        transition: 0.2s;
+    }
+    .prueba{
+        display: flex;
+        flex-direction: row;
+    }
+    .fotos{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
     }
 }
+
 @media only screen and (max-width: 600px){
     .producto{
-        display: inline-block;
+        display: flex;
     }
     .colonia{
-        display: inline-block;
-        justify-content: center;
+        display: inline-grid;
     }
-    .caract{
-        display: inline-block;
-        justify-content: center;
+   
+    .caract h3{
+        padding: 0.2em 0;
+        font-size: 1.2em;
     }
+   
     .fotos{
         display: flex;
         flex-direction: column-reverse;
         position: absolute; 
     }
+    .prueba{
+    display: flex;
+    justify-content: center;
+        
+    }
+    .comprar {
+        position: absolute;
+        padding:40em 0 10em 0;
+        
+    }
+    
 }
+@media only screen and (max-width: 450px) {
+    .comprar {
+        position: absolute;
+        padding:30em 0 10em 0;
+        
+    }
+}
+
 
 
