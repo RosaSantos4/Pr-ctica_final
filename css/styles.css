@@ -135,6 +135,7 @@ nav ul li a{
 .video-container {
     max-height: 94vh;
     overflow-y: hidden ;
+    overflow-x: hidden;
 }
 
 .video-container video { 
@@ -230,6 +231,7 @@ a {
     padding: 0;
     max-height: 93vh;
     overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 #carouselExampleAutoplaying {
@@ -239,6 +241,9 @@ a {
     height: auto;
 }
 
+.w-100 {
+    width: 70%!important;
+}
 
 #carrusel h2 {
     margin-left: 1.3em;
@@ -504,6 +509,14 @@ a {
         margin-top: .5em;
     }
 
+    .w-100 {
+        width: 90%!important;
+    }
+
+    .d-block {
+        display: inline!important;
+    }
+
     .comprar{
         display: flex;
         justify-content: center;
@@ -648,6 +661,14 @@ a {
         margin-left: 4em;
         margin: 1.5em;
         margin-top: .5em;
+    }
+
+    .w-100 {
+        width: 100%!important;
+    }
+
+    .d-block {
+        display: inline!important;
     }
 
     .comprar{
@@ -859,6 +880,14 @@ a {
         margin-top: .5em;
         margin-left: 0;
         margin-right: 0;
+    }
+
+    .w-100 {
+        width: 120%!important;
+    }
+
+    .d-block {
+        display: inline!important;
     }
 
     .comprar{
