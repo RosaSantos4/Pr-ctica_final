@@ -3,6 +3,18 @@
     margin: 0;
     font-family: 'DM Sans', sans-serif;
 }
+
+.link_atras {
+    width: 10%;
+}
+
+#flecha_back {
+    font-size: 3em;
+    color: blueviolet;
+    margin-left: 1em;
+    margin-top: 0.75em;
+    margin-right: 1em;
+}
 .producto{
     display: flex;
 }
@@ -15,7 +27,6 @@
 .producto p{
     color: white;
     text-decoration: none;
-    font-size: 1.2em;
 }
 .colonia{
     width: 80%;
@@ -25,26 +36,29 @@
     padding-top: 2em;
 }
 .ingredientes{
-    padding-top: 4em;
+    padding-top: 1em;
 }
-.ingredientes i{
-    color:blueviolet;
+
+.ingredientes_perfume {
+    margin-bottom: 1em;
 }
+
+.ingredientes_perfume img {
+    width: 5%;
+    margin-right: 1em;
+}
+
+.ingredientes_perfume {
+    display: flex;
+}
+
 .contenedor{
-    position: relative;
-    display: inline-block;
-    text-align: center;
+    margin-bottom: 1em;
 }
 .contenedor img{
     width: 100%;
 }
 
-.centrado{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
 .fotos{
     display: flex;
     flex-direction: column;
@@ -73,22 +87,23 @@
 .arandano_borde img{
     width: 10%;
 }
+
 h2{
     color: white;
     font-size: 3em;
+    font-weight: 500;
 }
+
 h3{
     color: white;
-    font-size: 1em;
+    font-size: 2em;
+    font-weight: 500;
 }
+
 i{
     color: white;
 }
 
-.caract h3{
-    padding: 0.4em 0;
-    font-size: 1.5em;
-}
 .prueba {
     display: flex;
     flex-direction: row-reverse;
@@ -181,6 +196,15 @@ i{
         position: absolute;
         padding:40em 0 10em 0;
         
+    }
+
+    .link_atras {
+        width: 5%;
+    }
+    
+    #flecha_back {
+        font-size: 2em;
+        margin-top: 1.15em;
     }
     
 }
