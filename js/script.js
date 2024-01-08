@@ -13,6 +13,7 @@ function unhover(element){
     element.setAttribute('src',"media/boton.svg")
 }
 
+// menú productos
 productos_menu = document.querySelector(".productos_menu");
 productos_menu.onclick = function () {
     navBar = document.querySelector (".nav-bar-producto");
