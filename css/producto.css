@@ -33,6 +33,9 @@
     display: flex;
     justify-content: space-between;
     height: 100vh;
+    /* padding-top: 2em; */
+}
+.caract {
     padding-top: 2em;
 }
 .ingredientes{
@@ -73,19 +76,40 @@
 .arandano{
     display: flex;
     justify-content: center;
- 
+    margin-right: 5em;
 }
 
+.arandano2 {
+    display: flex;
+    justify-content: center;
+    margin-left: 10em;
+}
+
+.arandano2 img {
+    width: 15% ;
+    transform: rotate(30deg)
+}
 .arandano img{
     width: 30%;
-    padding-top: 2em;
+    transform: rotate(-20deg)
+
 }
 .arandano img:hover{
     width: 35%;
     transition: 0.2s;
 }
+
+.arandano2 img:hover{
+    width: 35%;
+    transition: 0.2s;
+}
 .arandano_borde img{
     width: 10%;
+    margin-right: 5em;
+}
+
+#arandano_borde_2{
+    transform: rotate(-45deg)
 }
 
 h2{
@@ -108,12 +132,13 @@ i{
     display: flex;
     flex-direction: row-reverse;
     
+    
 }
 .comprar{
-    
     display: flex;
     justify-content: center;
     flex-direction: column; 
+    margin-left: 10em;
   
 }
 
@@ -124,7 +149,7 @@ i{
     
     
 }
-@media only screen and (max-width: 1200px){
+@media only screen and (max-width: 1000px){
     h2{
         font-size: 2em;
     }
